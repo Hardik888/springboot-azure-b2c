@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    azure:
+      active-directory:
+        b2c:
+          enabled: true
+          base-uri: <>
+          credential:
+            client-id: ""
+            client-secret: ""
+          login-flow: sign-up-or-sign-in
+          user-flows:
+            sign-up-or-sign-in: <user_flow>
+          user-name-attribute-name: given_name // Add the  correct claim if wrong it will break.
+
